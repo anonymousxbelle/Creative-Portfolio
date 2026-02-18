@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta name="keywords" content="Toyosi Ajiboye, portfolio, artwork, photography, graphic design, web design competition">
     <meta name="author" content="Toyosi Ajiboye">
     <meta name="description" content="Toyosi Ajiboye — artwork, photography, and graphic design portfolio.">
@@ -18,49 +18,60 @@
 
 <header class="header">
     <a  href ="index.html" class="logo">Toyosi Ajiboye</a>
-    <nav>
+    <nav class="nav-desktop">
         <a href="artwork.html">Artwork</a>
         <a href="design.html">Graphic Design</a>
         <a href="photos.html">Photography</a>
     </nav>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobileNav">
+        ☰
+    </button>
+
+    <nav class="nav" id="mobileNav">
+        <a href="artwork.html">Artwork</a>
+        <a href="photos.html">Photography</a>
+        <a href="design.html">Graphic Design</a>
+    </nav>
 </header>
 <main>
-<section class="hero fade-in">
-    <h1>Art. Graphic Design. Photography.</h1>
-    <p>A curated collection of creative work by Toyosi Ajiboye.</p>
+    <section class="hero fade-in">
+        <h1>Art. Graphic Design. Photography.</h1>
+        <p>A curated collection of creative work by Toyosi Ajiboye.</p>
 
-    <div class="hero-buttons">
-        <a href="artwork.html" class="btn-outline">View Artwork</a>
-        <a href="photos.html" class="btn-outline">View Photography</a>
-        <a href="design.html" class="btn-outline">View Graphic Designs</a>
-    </div>
-</section>
+        <div class="hero-buttons">
+            <a href="artwork.html" class="btn-outline">View Artwork</a>
+            <a href="photos.html" class="btn-outline">View Photography</a>
+            <a href="design.html" class="btn-outline">View Graphic Designs</a>
+        </div>
+    </section>
 
-<div class="divider"></div>
+    <div class="divider"></div>
 
-<section class="introduction fade-in">
-    <h1>Hello! I'm Toyosi.</h1>
-    <p>
-        Whether it’s writing novels and scripts, pouring my soul into an art piece,
-        capturing that perfect photo, or designing a book cover, creation has
-        always been my greatest source of satisfaction.
-        It’s what drives me, inspires me, and connects everything I do.
-        Each project, no matter the medium, is an opportunity to express my ideas
-        and push the boundaries of my creativity.
-    </p>
+    <section class="introduction fade-in">
+        <h1>Hello! I'm Toyosi.</h1>
+        <p>
+            Whether it’s writing novels and scripts, pouring my soul into an art piece,
+            capturing that perfect photo, or designing a book cover, creation has
+            always been my greatest source of satisfaction.
+            It’s what drives me, inspires me, and connects everything I do.
+            Each project, no matter the medium, is an opportunity to express my ideas
+            and push the boundaries of my creativity.
+        </p>
 
-    <p class="note">
-        If my life had a theme song, it would be "Soldier, Poet, King" by The Oh Hellos
-    </p>
-</section>
+        <p class="note">
+            If my life had a theme song, it would be "Soldier, Poet, King" by The Oh Hellos
+        </p>
+    </section>
 
-<div class="divider"></div>
+    <div class="divider"></div>
 </main>
 
 <footer>
     <p>© 2026 Toyosi Ajiboye</p>
 </footer>
 <script src="js/scroll-reveal.js"></script>
+<script src="js/nav.js"></script>
 
 </body>
 </html>

@@ -15,11 +15,21 @@
 
 <body>
 <header class="header">
-    <a href="index.html" class="logo">Toyosi Ajiboye</a>
-    <nav>
+    <a  href ="index.html" class="logo">Toyosi Ajiboye</a>
+    <nav class="nav-desktop">
         <a href="artwork.html">Artwork</a>
-        <a href="design.html" class="active">Graphic Design</a>
+        <a href="design.html">Graphic Design</a>
         <a href="photos.html">Photography</a>
+    </nav>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobileNav">
+        ☰
+    </button>
+
+    <nav class="nav" id="mobileNav">
+        <a href="artwork.html">Artwork</a>
+        <a href="photos.html">Photography</a>
+        <a href="design.html">Graphic Design</a>
     </nav>
 </header>
 
