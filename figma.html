@@ -12,7 +12,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .figma-banner { background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("assets/figma/star.png"); background-position: center; }
+        .figma-banner { position: relative; isolation: isolate; background: #000; }
+        .figma-banner::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: min(100%, 650px);
+            aspect-ratio: 1440 / 740;
+            background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("assets/figma/star.png") center top / 100% auto no-repeat;
+        }
         .figma-project { display: block; color: inherit; text-decoration: none; }
         .figma-project img { aspect-ratio: 45 / 32; object-fit: contain; background: #0e0e0e; }
         .figma-project-label { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; padding: 1rem; position: relative; background: #171717; color: #fff; }
