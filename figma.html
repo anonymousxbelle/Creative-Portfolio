@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Figma web and interface designs by Toyosi Ajiboye.">
+    <meta name="author" content="Toyosi Ajiboye" />
+
+    <title>Toyosi Ajiboye | Figma Designs</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .figma-banner { background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("assets/figma/star.png"); background-position: center; }
+        .figma-project { display: block; color: inherit; text-decoration: none; }
+        .figma-project img { aspect-ratio: 45 / 32; object-fit: contain; background: #0e0e0e; }
+        .figma-project-label { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; padding: 1rem; position: relative; background: #171717; color: #fff; }
+        .figma-project:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+    </style>
+</head>
+
+<body>
+<header class="header">
+    <a  href ="index.html" class="logo">Toyosi Ajiboye</a>
+    <nav class="nav-desktop">
+        <a href="artwork.html">Artwork</a>
+        <a href="design.html">Graphic Design</a>
+        <a href="photos.html">Photography</a>
+        <a href="figma.html" class="active" aria-current="page">Figma Designs</a>
+    </nav>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobileNav">
+        ☰
+    </button>
+
+    <nav class="nav" id="mobileNav">
+        <a href="artwork.html">Artwork</a>
+        <a href="photos.html">Photography</a>
+        <a href="design.html">Graphic Design</a>
+        <a href="figma.html" class="active" aria-current="page">Figma Designs</a>
+    </nav>
+</header>
+
+<main>
+    <section class="design-banner figma-banner">
+        <div class="design-banner-inner">
+            <h1>Figma Designs</h1>
+            <p class="muted">Web and interface designs. Select a project to explore it in Figma.</p>
+        </div>
+    </section>
+
+    <section class="artwork-section fade-in" aria-label="Figma projects">
+        <div class="artwork-grid">
+            <a class="gallery-item fade-in figma-project" href="https://www.figma.com/design/0qNQPeGXIQZ8ebsLu18CVD/Sword-Pen-Crown?node-id=0-1" target="_blank" rel="noopener noreferrer" aria-label="Sword Pen Crown — view in Figma (opens in a new tab)">
+                <img src="assets/figma/sword-pen-crown.png" alt="" width="1440" height="1024" loading="lazy">
+                <span class="figma-project-label"><strong>Sword Pen Crown</strong><span>View in Figma ↗</span></span>
+            </a>
+            <a class="gallery-item fade-in figma-project" href="https://www.figma.com/design/Tf1bXzZOSUMxly6dG1Xt1T/Design-Express?node-id=0-1" target="_blank" rel="noopener noreferrer" aria-label="Design Express · Uber Access — view in Figma (opens in a new tab)">
+                <img src="assets/figma/design-express.png" alt="" width="375" height="812" loading="lazy">
+                <span class="figma-project-label"><strong>Design Express · Uber Access</strong><span>View in Figma ↗</span></span>
+            </a>
+            <a class="gallery-item fade-in figma-project" href="https://www.figma.com/design/WIGtvuZvfwSSgvSz5ytIku/Star?node-id=0-1" target="_blank" rel="noopener noreferrer" aria-label="STAR — view in Figma (opens in a new tab)">
+                <img src="assets/figma/star.png" alt="" width="1440" height="1024" loading="lazy">
+                <span class="figma-project-label"><strong>STAR</strong><span>View in Figma ↗</span></span>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p><a href="index.html">← Back Home</a></p>
+</footer>
+
+<script src="js/scroll-reveal.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>
